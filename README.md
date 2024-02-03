@@ -22,7 +22,7 @@ flutter run
 - State management using Riverpod
 - Route management using go_router
 - Recipe list search with query param
-- Recipe search with path param
+- Recipe detail search with path param
 
 ## Built With
 - [Flutter](https://flutter.dev/)
