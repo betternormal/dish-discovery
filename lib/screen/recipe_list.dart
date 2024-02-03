@@ -80,8 +80,8 @@ class _RecipeListState extends State<RecipeList> {
                         childCount: value.recipes.length,
                       ),
                     ),
-                  AsyncError() => const SliverToBoxAdapter(
-                      child: Text('Oops, something unexpected happened')),
+                  AsyncError() => const SliverFillRemaining(
+                      child: Center(child: Text('Oops, something unexpected happened'))),
                   _ => const SliverFillRemaining(
                       child: Center(child: CircularProgressIndicator())),
                 }
