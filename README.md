@@ -6,7 +6,9 @@ A Flutter application allows users to explore various dishes and recipes.
 <p float="left">
     <img src="./screenshots/recipe_list.png" alt="Recipe List" width="250">
     <img src="./screenshots/recipe_search.png" alt="Recipe Search" width="250">
-    <img src="./screenshots/recipe_detail.png" alt="Recipe Detail.png" width="250">
+    <img src="./screenshots/recipe_details.png" alt="Recipe Details.png" width="250">
+    <img src="./screenshots/recipe_error.png" alt="Recipe Details.png" width="250">
+    <img src="./screenshots/recipe_slide.png" alt="Recipe Details.png" width="250">
 </p>
 
 ## How to run
