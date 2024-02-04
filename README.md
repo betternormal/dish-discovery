@@ -12,7 +12,7 @@ A Flutter application allows users to explore various dishes and recipes.
 </p>
 
 ## How to run
-To run the app, you need to have Flutter installed on your machine. [Flutter Setup](https://docs.flutter.dev/get-started/install)
+To run the app, you need to have Flutter(3.16.0) installed on your machine. [Flutter Setup](https://docs.flutter.dev/get-started/install)
 ```
 git clone https://github.com/betternormal/dish-discovery.git
 cd dish-discovery
