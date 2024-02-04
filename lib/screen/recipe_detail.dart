@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../model/recipe.dart';
 import '../provider/recipe_provider.dart';
+import 'widgets/detail_row.dart';
 
 class RecipeDetail extends StatelessWidget {
   final String id;
@@ -39,108 +40,12 @@ class RecipeDetail extends StatelessWidget {
                             ),
                           ),
                           const SizedBox(height: 15),
-                          Row(
-                            children: [
-                              Text(
-                                'prepTimeMinutes: ',
-                                style: const TextStyle(
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                              Text(
-                                '${value.prepTimeMinutes}',
-                                style: const TextStyle(
-                                  fontSize: 15,
-                                ),
-                              ),
-                            ],
-                          ),
-                          Row(
-                            children: [
-                              Text(
-                                'cookTimeMinutes: ',
-                                style: const TextStyle(
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                              Text(
-                                '${value.cookTimeMinutes}',
-                                style: const TextStyle(
-                                  fontSize: 15,
-                                ),
-                              ),
-                            ],
-                          ),
-                          Row(
-                            children: [
-                              Text(
-                                'servings: ',
-                                style: const TextStyle(
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                              Text(
-                                '${value.servings}',
-                                style: const TextStyle(
-                                  fontSize: 15,
-                                ),
-                              ),
-                            ],
-                          ),
-                          Row(
-                            children: [
-                              Text(
-                                'difficulty: ',
-                                style: const TextStyle(
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                              Text(
-                                '${value.difficulty}',
-                                style: const TextStyle(
-                                  fontSize: 15,
-                                ),
-                              ),
-                            ],
-                          ),
-                          Row(
-                            children: [
-                              Text(
-                                'cuisine: ',
-                                style: const TextStyle(
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                              Text(
-                                '${value.cuisine}',
-                                style: const TextStyle(
-                                  fontSize: 15,
-                                ),
-                              ),
-                            ],
-                          ),
-                          Row(
-                            children: [
-                              Text(
-                                'caloriesPerServing: ',
-                                style: const TextStyle(
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                              Text(
-                                '${value.caloriesPerServing}',
-                                style: const TextStyle(
-                                  fontSize: 15,
-                                ),
-                              ),
-                            ],
-                          ),
+                          DetailRow(title: "prepTimeMinutes", value: "${value.prepTimeMinutes}"),
+                          DetailRow(title: "cookTimeMinutes", value: "${value.cookTimeMinutes}"),
+                          DetailRow(title: "servings", value: "${value.servings}"),
+                          DetailRow(title: "difficulty", value: "${value.difficulty}"),
+                          DetailRow(title: "cuisine", value: "${value.cuisine}"),
+                          DetailRow(title: "caloriesPerServing", value: "${value.caloriesPerServing}"),
                         ],
                       ),
                     ),
